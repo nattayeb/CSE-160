@@ -19,6 +19,10 @@ function main() {
     // Draw a black rectangle
     ctx.fillStyle = 'rgba(0, 0, 0, 1.0)'; // Set a black color
     ctx.fillRect(0, 0, 400, 400); // Fill a rectangle with the color
+
+    var v1 = new Vector3([2.5, 2.5, 0]);
+
+    drawVector(v1, 'red');
 }
 
 function drawVector(v, color) {
