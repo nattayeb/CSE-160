@@ -1,0 +1,80 @@
+<!--
+Student name: Naydeen Attayeb
+UCSC email: nattayeb@ucsc.edu
+
+Notes to Grader:
+None
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Colored Points</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <img src="../images/windmill.jpeg" width="400" height="400" alt="Windmill drawn using triangles">
+
+    <div>
+        <p>
+            <input id="clear" type="button" value="Clear Canvas">
+            <input id="draw" type="button" value="Draw My Picture of a Windmill">
+        </p>
+    </div>
+
+    <div>
+        <p>Drawing Mode:</p>        
+        <input id="squares" type="button" value="Squares">
+        <input id="triangles" type="button" value="Triangles">
+        <input id="circles" type="button" value="Circles">
+    </div>
+
+    <div>
+        <p>Shape Color:</p>
+        <label for="redSlider">
+            Red
+            <input type="range" name="Red" id="redSlider" min="0" max="100" value="0">
+        </label>
+        <label for="greenSlider">
+            Green
+            <input type="range" name="Green" id="greenSlider" min="0" max="100" value="0">
+        </label>
+        <label for="blueSlider">
+            Blue
+            <input type="range" name="Blue" id="blueSlider" min="0" max="100" value="0">
+        </label>
+        <label for="alphaSlider">
+            Alpha 
+            <input type="range" name="Alpha" id="alphaSlider" min="0" max="100" value="100">
+        </label>
+    </div>
+
+    <div>
+        <label for="shapeSize">Shape Size: <input type="range" name="shapeSize" id="shapeSize" class="slider" min="5" max="40" value="10"></label>
+        <label for="segmentCount">(Circles) Segment Count: <input type="range" name="segmentCount" id="segmentCount" min="3" max="100" value="10"></label>
+    </div>
+
+    <div>
+        <h3>Awesomeness!</h3>
+        <ul>
+            <li>Added color alpha slider to control transparency.</li>
+            <li>Added ability to draw an inverted triangle by extending Triangle class.</li>
+        </ul>
+    </div>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="drawPicture.js"></script>
+    <script src="asg1.js"></script>
+</body>
+
+</html>
