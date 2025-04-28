@@ -1,0 +1,61 @@
+<!--
+Student name: Naydeen Attayeb
+UCSC email: nattayeb@ucsc.edu
+
+Notes to Grader:
+None
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <div>
+        <p>
+            Performance: <span id="performance">0</span> FPS
+        </p>
+    </div>
+
+    <div>
+        <label for="upperLimbsSlider">
+            Upper limbs: <input type="range" name="Red" id="upperLimbsSlider" class="slider" min="-45" max="45" value="0">
+        </label>    
+
+    <div>
+        <label for="lowerLimbsSlider">
+            Lower limbs: <input type="range" name="Yellow" id="lowerLimbsSlider" class="slider" min="-45" max="45" value="0">
+        </label>
+    </div>
+
+    <div>
+        Animation:
+        <button type="button" id="animationOnButton">ON</button>
+        <button type="button" id="animationOffButton">OFF</button>
+    </div>
+
+    <div>
+        <label for="angleSlider">
+            Camera Angle: <input type="range" name="Camera Angle" id="angleSlider" class="slider" min="0" max="360" value="0">
+        </label>
+    </div>
+
+    
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="BlockyAnimal.js"></script>
+</body>
+
+</html>
