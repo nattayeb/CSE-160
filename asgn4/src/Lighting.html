@@ -1,0 +1,81 @@
+<!--
+Student name: Naydeen Attayeb
+UCSC email: nattayeb@ucsc.edu
+
+Notes to Grader:
+None
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Virtual World</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <div>
+        <p>
+            Performance: <span id="performance">0</span> FPS
+        </p>
+    </div>
+
+    <div>
+        Light:
+        <button type="button" id="lightOnButton">ON</button>
+        <button type="button" id="lightOffButton">OFF</button>
+    </div>
+
+    <div>
+        Light X: <input type="range" name="Light X" id="lightXSlider" class="slider" min="-250" max="250" value="0">
+        Light Y: <input type="range" name="Light Y" id="lightYSlider" class="slider" min="-250" max="250" value="100">
+        Light Z: <input type="range" name="Light Z" id="lightZSlider" class="slider" min="-250" max="250" value="200">
+    </div>
+
+    <div>
+        Light Red: <input type="range" name="Light Red" id="lightRedSlider" class="slider" min="0" max="255" value="255">
+        Light Green: <input type="range" name="Light Green" id="lightGreenSlider" class="slider" min="-0" max="255" value="255">
+        Light Blue: <input type="range" name="Light Blue" id="lightBlueSlider" class="slider" min="-0" max="255" value="0">
+    </div>
+
+    <div>
+        <p>
+            <input type="button" value="Normals On" id="normalsOnButton">
+            <input type="button" value="Normals Off" id="normalsOffButton">
+        </p>        
+    </div>
+
+    <div>
+        <label for="angleSlider">
+            Camera Angle: <input type="range" name="Camera Angle" id="angleSlider" class="slider" min="0" max="360"
+                value="0">
+        </label>
+    </div>
+
+    <div>
+        <p>
+            Switch to Virtual World:
+            <button type="button" id="virtualWorldOnButton">ON</button>
+            <button type="button" id="virtualWorldOffButton">OFF</button>
+        </p>
+        
+    </div>
+
+
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Lighting.js"></script>
+</body>
+
+</html>
