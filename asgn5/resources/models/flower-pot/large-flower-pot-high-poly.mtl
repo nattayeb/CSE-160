@@ -1,0 +1,46 @@
+# Blender 4.4.3 MTL File: 'large-flower-pot-high-poly.blend'
+# www.blender.org
+
+newmtl flower_pot_u1_v1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd flower_pot_u1_v1_diffuse.png
+map_Bump -bm 1.000000 flower_pot_u1_v1_normal.png
+
+newmtl flower_pot_u1_v2.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd flower_pot_u1_v2_diffuse.png
+map_Bump -bm 1.000000 flower_pot_u1_v2_normal.png
+
+newmtl flower_pot_u2_v1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd flower_pot_u2_v1_diffuse.png
+map_Bump -bm 1.000000 flower_pot_u2_v1_normal.png
+
+newmtl flower_pot_u2_v2.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd flower_pot_u2_v2_diffuse.png
+map_Bump -bm 1.000000 flower_pot_u2_v2_normal.png
